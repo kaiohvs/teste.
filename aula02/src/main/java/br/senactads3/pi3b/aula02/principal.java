@@ -5,6 +5,9 @@
  */
 package br.senactads3.pi3b.aula02;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author kaio.hvsantos
@@ -16,6 +19,11 @@ public class principal {
         System.out.println("hello world PI3B");
     }else{
             System.out.println("ERRO");
+        }
+        try {
+            Thread.sleep(3L);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(principal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }
