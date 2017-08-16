@@ -11,11 +11,12 @@ package br.senactads3.pi3b.aula02;
  */
 public class principal {
     public static void main(String[] args) {
-        int x =10;
+        for(int i =0; i<10; i++){
         if(System.currentTimeMillis() %2==1){
         System.out.println("hello world PI3B");
     }else{
             System.out.println("ERRO");
         }
+    }
     }
 }
